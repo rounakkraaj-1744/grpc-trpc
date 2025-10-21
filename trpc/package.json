@@ -1,0 +1,22 @@
+{
+  "name": "trpc",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@trpc/client": "^11.6.0",
+    "@trpc/server": "^11.6.0",
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "client": "bun src/client.ts",
+    "server": "bun src/server.ts",
+    "dev": "concurrently \"bun run server\" \"sleep 1 && bun run client\""
+  }
+}
