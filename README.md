@@ -1,7 +1,7 @@
 # gRPC and tRPC demo
 
 1. ```bash
-    git clone
+    git clone https://github.com/rounakkraaj-1744/grpc-trpc.git
    ```
 2. cd grpc
    ```bash
